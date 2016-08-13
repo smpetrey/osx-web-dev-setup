@@ -81,6 +81,11 @@ Install [Node & NPM](#) with Homebrew:
 brew install node
 ```
 
+Change permissions for macOS:
+```
+sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+```
+
 Install [Gulp](http://gulpjs.com/) via NPM and other node packages as needed (grunt, bower, etc.).
 
 **TIP 1:** Updating:
